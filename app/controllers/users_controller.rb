@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     render({ :template => "users/show.html.erb" })
   end
 
+  def new_registration_form
+    render({ :template => "users/signup_form.html.erb" })
+  end
+
   def create
     user = User.new
 
